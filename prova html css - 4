@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Caixas Centralizadas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        /* Contêiner flexível */
+        .container {
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center;    /* Centraliza verticalmente */
+            min-height: 300px;     /* Altura mínima para visualização */
+            gap: 20px;             /* Espaço entre as caixas */
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        /* Estilo das caixas */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contêiner Flexível com Caixas Centralizadas</h1>
+    
+    <div class="container">
+        <div class="box">Caixa 1</div>
+        <div class="box">Caixa 2</div>
+        <div class="box">Caixa 3</div>
+    </div>
+</body>
+</html>
